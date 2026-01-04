@@ -1,2 +1,108 @@
 # 202601
 ポートフォリオ
+
+# Task Management App（Task管理アプリ）
+
+React + Spring Boot で作成したシンプルなタスク管理アプリです。  
+ログイン機能・タスクの一覧表示・追加・完了管理までを一通り実装しています。
+
+フロントエンド／バックエンドを分離し、API通信を行う構成で作成しました。
+
+---
+
+## 使用技術
+
+### フロントエンド
+- React（TypeScript）
+- Vite
+- Tailwind CSS
+- fetch API
+
+### バックエンド
+- Spring Boot
+- Spring Data JPA
+- H2 Database（インメモリ）
+- Maven
+
+---
+
+## 機能一覧
+
+### 認証
+- ログイン機能（ID / パスワード）
+- Enterキーでログイン可能
+- 認証処理をメソッドに分離し、可読性を意識
+
+### タスク管理
+- タスク一覧表示
+- タスク追加
+- タスク完了／未完了の切り替え（チェックボックス）
+- 完了タスクは打ち消し表示
+
+---
+
+## 画面構成
+
+- ログイン画面
+- タスク一覧画面
+
+※ ルーティングは使用せず、状態管理による画面切り替えを行っています。
+
+---
+
+## フォルダ構成
+
+### フロントエンド（task-ui）
+task-ui/
+├─ src/
+│ ├─ api/
+│ │ └─ taskApi.ts
+│ ├─ auth/
+│ │ └─ authService.ts
+│ ├─ Login.tsx
+│ ├─ TaskList.tsx
+│ └─ App.tsx
+├─ package.json
+└─ vite.config.ts
+
+shell
+コードをコピーする
+
+### バックエンド（task-api）
+task-api/
+├─ src/main/java/com/example/task_api/
+│ ├─ controller/
+│ ├─ entity/
+│ ├─ repository/
+│ └─ TaskApiApplication.java
+├─ pom.xml
+└─ target/
+
+---
+
+## 起動方法
+
+### バックエンド
+
+cd task-api
+./mvnw spring-boot:run
+→ http://localhost:8080
+
+フロントエンド
+
+cd task-ui
+npm install
+npm run dev
+→ http://localhost:5173
+
+今後の改善予定
+ユーザー情報のDB管理
+バリデーション強化
+エラーメッセージのUI改善
+
+
+
+補足
+学習・ポートフォリオ目的で作成した個人開発アプリです。
+これまで経験した業務を思い出して参考にしつつ作成しています。
+)
