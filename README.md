@@ -50,36 +50,6 @@ React + Spring Boot で作成したシンプルなタスク管理アプリです
 
 ---
 
-## フォルダ構成
-
-### フロントエンド（task-ui）
-task-ui/
-├─ src/
-│ ├─ api/
-│ │ └─ taskApi.ts
-│ ├─ auth/
-│ │ └─ authService.ts
-│ ├─ Login.tsx
-│ ├─ TaskList.tsx
-│ └─ App.tsx
-├─ package.json
-└─ vite.config.ts
-
-shell
-コードをコピーする
-
-### バックエンド（task-api）
-task-api/
-├─ src/main/java/com/example/task_api/
-│ ├─ controller/
-│ ├─ entity/
-│ ├─ repository/
-│ └─ TaskApiApplication.java
-├─ pom.xml
-└─ target/
-
----
-
 ## 起動方法
 
 ### バックエンド
@@ -105,4 +75,3 @@ npm run dev
 補足
 学習・ポートフォリオ目的で作成した個人開発アプリです。
 これまで経験した業務を思い出して参考にしつつ作成しています。
-)
