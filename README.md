@@ -17,7 +17,6 @@ React + Spring Boot で作成したシンプルなタスク管理アプリです
 - Vite
 - Tailwind CSS
 - fetch API
-##
 
 ### バックエンド
 - Spring Boot
@@ -59,20 +58,20 @@ cd task-api
 ./mvnw spring-boot:run
 → http://localhost:8080
 
-フロントエンド
+### フロントエンド
 
 cd task-ui
 npm install
 npm run dev
 → http://localhost:5173
 
-今後の改善予定
-ユーザー情報のDB管理
-バリデーション強化
-エラーメッセージのUI改善
+## 今後の改善予定
+- ユーザー情報のDB管理
+- バリデーション強化
+- エラーメッセージのUI改善
 
 
 
-補足
+## 補足
 学習・ポートフォリオ目的で作成した個人開発アプリです。
 これまで経験した業務を思い出して参考にしつつ作成しています。
